@@ -2,10 +2,11 @@
 
 ## Elevation and Bathymetry Data (Gridded)
 
+*Note: for the first PoC around Limburg, we focus on the file INSPIRE_MN_noord_5_NAP*
+
 ### Files bathymetry 1 mtr. bodemhoogte (recommended):
 
 https://www.rijkswaterstaat.nl/apps/geoservices/geodata/dmc/bodemhoogte_1mtr 
-
 
 ### Files bathymetry 5 mtr. bodemhoogte:
 https://www.rijkswaterstaat.nl/apps/geoservices/geodata/dmc/bodemhoogte_5mtr
