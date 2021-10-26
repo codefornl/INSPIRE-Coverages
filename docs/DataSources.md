@@ -1,5 +1,7 @@
 # Data Sources
 
+_Note: Value is always in the corner (bottom left)_
+
 ## Elevation and Bathymetry Data (Gridded)
 
 *Note: for the first PoC around Limburg, we focus on the file INSPIRE_MN_noord_5_NAP*
