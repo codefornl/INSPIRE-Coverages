@@ -7,8 +7,7 @@ It wille be used this will be used to decide on the final date for the workshop
 
 We would like to invite you to take note of our experiences.
 
-Time period to Doodle the workshop (yes,no,may be)
-# Wednesday- or thursdayafternoon on  17 - 18 - 24 or 25 november
+# Thursday 18 November 13:15 - 15:30
 Online
 
 # Purpose
