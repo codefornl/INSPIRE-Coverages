@@ -1,6 +1,13 @@
 # INSPIRE-Coverages
 A repository for collecting and distributing information on INSPIRE Coverages
 
+## Workshop 
+Direct connected with the dutch Geoforum (https://geoforum.nl/t/inspire-coverages)
+
+Date: Thursday 18 November
+
+Details on the [Workshop](docs/Workshop.md)
+
 ## Goals
 
 Provide Elevation and Bathymetry data with WCS on a 1 and 10m grid for the NL Limburg area, following [INSPIRE Good Practice (GP)](https://inspire.ec.europa.eu/coverage-good-practice). This data will be complemented with point based measurement data (e.g. water levels, precipitation forecast) provided via SensorThings API. The results together with usage examples will be presented at the final workshop.
@@ -37,12 +44,5 @@ Approach: provide 1 & 10 m under INSPIRE, continue to provide 20m for the other 
 Do we provide all elevation in one coverage for NL, or subset by area? What IT Requirements to support this?
 
 How to deal with the fact that canals cross?
-
-## Workshop 
-Direct connected with the dutch Geoforum (https://geoforum.nl/t/inspire-coverages)
-
-Date: TBD, Wednesday- or thursdayafternoon on  17 - 18 - 24 or 25 november
-
-Details on the [Workshop](docs/Workshop.md)
-
+- Created an [Issue](https://github.com/INSPIRE-MIF/helpdesk/issues/64) on the INSPIRE Helpdesk (26.10.21)
 
