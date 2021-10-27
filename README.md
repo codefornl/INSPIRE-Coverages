@@ -4,7 +4,7 @@ A repository for collecting and distributing information on INSPIRE Coverages
 ## Workshop 
 Direct connected with the dutch Geoforum (https://geoforum.nl/t/inspire-coverages)
 
-Date: Thursday 18 November
+Date: **Thursday 18 November, 13:15 - 15:30**
 
 Details on the [Workshop](docs/Workshop.md)
 
