@@ -18,9 +18,9 @@ Data is locked in organizational DBs, in diverse formats, difficult to access an
 There are various issues with the INSPIRE Coverage Data Models and TG for WCS, now mostly resolved by the INSPIRE Coverage Good Practice and developments by GeoSolutions and Rasdaman.
 
 #### The way Forward: what do we do?
-How to extract the data from its current location, prepare for provision
-How to import the data to a WCS
-How to use the data available from a WCS
+- How to extract the data from its current location, prepare for provision
+- How to import the data to a WCS
+- How to use the data available from a WCS
 
 #### The Future: slowly but surely, the world is becoming FAIR
 
