@@ -6,6 +6,24 @@ Direct connected with the dutch Geoforum (https://geoforum.nl/t/inspire-coverage
 
 Date: **Thursday 18 November, 13:15 - 15:30**
 
+### Agenda
+
+#### The Goal: a FAIR world. 
+Imagine a world where the data you require is findable, accessible, interoperable, reusable. 
+
+#### The Present: not there yet!
+Data is locked in organizational DBs, in diverse formats, difficult to access and use
+
+#### The Issues: what’s keeping us from the Future?
+There are various issues with the INSPIRE Coverage Data Models and TG for WCS, now mostly resolved by the INSPIRE Coverage Good Practice and developments by GeoSolutions and Rasdaman.
+
+#### The way Forward: what do we do?
+How to extract the data from its current location, prepare for provision
+How to import the data to a WCS
+How to use the data available from a WCS
+
+#### The Future: slowly but surely, the world is becoming FAIR
+
 Details on the [Workshop](docs/Workshop.md)
 
 ## Goals
