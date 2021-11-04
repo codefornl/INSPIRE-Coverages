@@ -54,6 +54,8 @@ All [data sources](docs/DataSources.md)
 
 DataCove: http://sandbox.datacove.eu:8080/rasdaman/ows#/services
 
+Wetransform: https://coverage-demo.wetransform.eu/rasdaman/ows#/services
+
 ## Issues
 
 Grid resolution: INSPIRE thinks in powers of 10, grids are 1, 10, 100.... m. Various existing EU projects think in 20m grids (unclear what the CRS is)
