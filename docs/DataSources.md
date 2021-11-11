@@ -56,6 +56,14 @@ Ein DGM-W bildet die Höhe der Gewässersohle als auch des Gewässerbetts und de
 
 _Note: info from Lukas Glaw - BfG_
 
+### DE Elevation
+
+Die terrestrische Höhe wird von den Landesvermessungsämtern mit einer Gitterweite von mindestens 1 m erhoben und ist je nach Bundesland frei verfügbar oder kostenpflichtig. NRW hat eine Open Data policy und stellt die Daten frei zur Verfügung. Es gibt inzwischen aber auch ein freies DOM von ganz Deutschland: https://gdz.bkg.bund.de/index.php/default/digitale-geodaten/digitale-gelandemodelle/digitales-oberfaechenmodell-dom1.html
+
+Der Download der DGM-Daten von NRW geht glaub ich über https://www.tim-online.nrw.de/tim-online2/
+
+
+
 ### BE Elevation
 
 From INSPIRE Geoportal:
