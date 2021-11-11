@@ -43,4 +43,15 @@ An online version has been provided at:
 
 http://info.datacove.eu/WaterinfoSTA.html
 
+## Neighboring Data
+
+### DE Rhine Bathymetry
+
+Geoportal der BfG - Metadata to DGM-W of the Rhine: https://geoportal.bafg.de/smartfinderClient/js/apps/portal-integration/index.html?lang=de#/datasets/iso/15b1c01e-4285-4d7d-808d-597236830d86 
+
+Data (URLs to TIFs) available from the following page: https://doi.pangaea.de/10.1594/PANGAEA.919308?format=textfile
+
+Additional information: 
+Ein DGM-W bildet die Höhe der Gewässersohle als auch des Gewässerbetts und der näheren Umgebung ab: https://www.bafg.de/DE/08_Ref/M5/03_Geotopographie/DGMW/dgmw.html Sind das in etwa die Daten, die Sie, bzw. die Niederländer suchen?
+
 
