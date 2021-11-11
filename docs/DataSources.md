@@ -1,6 +1,8 @@
 # Data Sources
 
-_Note: Value is always in the corner (bottom left)_
+_Notes:_ 
+- _Value is always in the corner (bottom left)_
+- _Values always pertain to the grid corners, NOT the center point of the cell_
 
 ## Elevation and Bathymetry Data (Gridded)
 
