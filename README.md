@@ -58,11 +58,4 @@ Wetransform: https://coverage-demo.wetransform.eu/rasdaman/ows#/services
 
 ## Issues
 
-Grid resolution: INSPIRE thinks in powers of 10, grids are 1, 10, 100.... m. Various existing EU projects think in 20m grids (unclear what the CRS is)
-Approach: provide 1 & 10 m under INSPIRE, continue to provide 20m for the other projects but complying to INSPIRE WCS guidelines. Need to determine CRS for this
-
-Do we provide all elevation in one coverage for NL, or subset by area? What IT Requirements to support this?
-
-How to deal with the fact that canals cross?
-- Created an [Issue](https://github.com/INSPIRE-MIF/helpdesk/issues/64) on the INSPIRE Helpdesk (26.10.21)
-
+Information on all [issues](docs/Issues.md)
