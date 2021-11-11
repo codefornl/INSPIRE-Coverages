@@ -54,6 +54,8 @@ Data (URLs to TIFs) available from the following page: https://doi.pangaea.de/10
 Additional information: 
 Ein DGM-W bildet die Höhe der Gewässersohle als auch des Gewässerbetts und der näheren Umgebung ab: https://www.bafg.de/DE/08_Ref/M5/03_Geotopographie/DGMW/dgmw.html Sind das in etwa die Daten, die Sie, bzw. die Niederländer suchen?
 
+_Note: info from Lukas Glaw - BfG_
+
 ### BE Elevation
 
 From INSPIRE Geoportal:
