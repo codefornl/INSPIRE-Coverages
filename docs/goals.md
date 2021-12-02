@@ -21,3 +21,23 @@
 7. Workshop on how to both provide and use coverage data with WCS (including all INSPIRE Requirements)
 8. Working together for international goal providing raster data harmonized across MS
    1. find agreement as to what resolutions are commonly provided by MS
+
+
+
+# Further thoughts
+[16:33] Wal, Herzo van der (CIV)
+Facilitating the participant in the PoC
+
+[16:33] Wal, Herzo van der (CIV)
+OTAP development of facilities
+
+[16:35] Wal, Herzo van der (CIV)
+Foundation of the communities
+
+[16:35] kathi (Gast)
+Laying the foundation for the generation of rainbows
+
+[16:36] Wal, Herzo van der (CIV)
+Foundation for the Concepts
+
+
