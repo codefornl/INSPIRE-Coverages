@@ -24,7 +24,7 @@
 
 
 
-# Further thoughts
+# Further thoughts on Communities for INSPIRE
 [16:33] Wal, Herzo van der (CIV)
 Facilitating the participant in the PoC
 
@@ -50,3 +50,8 @@ Artificial Intelligence for the Environment
 Datasource for AI
 
 Natural Data for Artificial Intelligence
+
+[16:47] Wal, Herzo van der (CIV)
+DataSource for analytics
+
+
