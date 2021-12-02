@@ -31,13 +31,22 @@ Facilitating the participant in the PoC
 [16:33] Wal, Herzo van der (CIV)
 OTAP development of facilities
 
-[16:35] Wal, Herzo van der (CIV)
-Foundation of the communities
-
 [16:35] kathi (Gast)
 Laying the foundation for the generation of rainbows
 
 [16:36] Wal, Herzo van der (CIV)
 Foundation for the Concepts
 
+Shift to Code4EU
 
+Try and involve university classes to show usage of the data
+
+[16:44] Wal, Herzo van der (CIV)
+Data driven 
+
+[16:45] Wal, Herzo van der (CIV)
+Artificial Intelligence for the Environment
+
+Datasource for AI
+
+Natural Data for Artificial Intelligence
