@@ -4,7 +4,7 @@ While a lot of “normal” spatial data relies on points, lines and polygons fo
 
 Coverage models take a different approach, relying on the regularity of the positioning of the measurement points. If we know that the measurement points are located on a rectilinear grid, we don’t need to list every point individually! Instead, all we need to define the grid representing the area for which we wish to provide data are the origin, offset and extent. This grid is known as the Domain of the Coverage. In the Range of the Coverage, we provide a value for each grid point described in the Domain. The order in which these values are provided is specified in the CoverageFunction (are the rows scanned  horizontally or vertically).
 
-![DomainRange](./pix/DomainRange.png)
+![DomainRange](./pix/DomainRangeS.png)
 
 
 ## Coverage Domain
