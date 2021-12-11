@@ -16,7 +16,7 @@ Instead, all we need to define the basic grid are:
 - 2 offset vectors: these are usually expressed as E(ast) and N(orth) or X and Y
 - Extent: how many steps do we take in each direction
 
-![DomainAnnotated](./pix/DomainAnnotated.png)
+![DomainAnnotated](./pix/DomainAnnotatedS.png)
 
 
 ## Coverage Domain Example
