@@ -7,3 +7,26 @@ Coverage models take a different approach, relying on the regularity of the posi
 - The origin: a point from which we start our grid
 - 2 offset vectors: these are usually expressed as E(ast) and N(orth) or X and Y
 - Extent: how many steps do we take in each direction
+
+
+'        <gml:domainSet>
+            <gml:RectifiedGrid dimension="2" gml:id="INSPIRE_WNZ_5_NAP-grid">
+                <gml:limits>
+                    <gml:GridEnvelope>
+                        <gml:low>0 -5945</gml:low>
+                        <gml:high>103275 44120</gml:high>
+                    </gml:GridEnvelope>
+                </gml:limits>
+                <gml:axisLabels>Y X</gml:axisLabels>
+                <gml:origin>
+                    <gml:Point gml:id="INSPIRE_WNZ_5_NAP-point" srsName="http://localhost:8080/def/crs/EPSG/0/3035">
+                        <gml:pos>3180857.5 4008022.5</gml:pos>
+                    </gml:Point>
+                </gml:origin>
+                <gml:offsetVector srsName="http://localhost:8080/def/crs/EPSG/0/3035">-1 0</gml:offsetVector>
+                <gml:offsetVector srsName="http://localhost:8080/def/crs/EPSG/0/3035">0 1</gml:offsetVector>
+            </gml:RectifiedGrid>
+        </gml:domainSet>
+'
+
+
