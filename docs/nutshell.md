@@ -2,9 +2,9 @@
 
 While a lot of “normal” spatial data relies on points, lines and polygons for the representation of spatial objects, this approach doesn’t work when providing data over a larger area where the values vary across the area. A nice example of this is Elevation, what “normal” spatial feature would one use to represent the varying elevation values across a country? While one could serve lots of individual points or little polygons, one for each measurement point, such an approach becomes very inefficient when dealing with high resolution data, e.g. an elevation point every 5m.
 
-Coverage models take a different approach, relying on the regularity of the positioning of the measurement points. If we know that the measurement points are located on a rectilinear grid, we don’t need to list every point individually! Instead, all we need to define the grid representing the area for which we wish to provide data are the origin, offset and extent. This grid is known as the Domain of the Coverage. In the Range of the Coverage, we provide a value for each grid point described in the Domain. The order in which these values are provided is specified in the CoverageFunction (are the rows scanned  horizontally or vertically)
+Coverage models take a different approach, relying on the regularity of the positioning of the measurement points. If we know that the measurement points are located on a rectilinear grid, we don’t need to list every point individually! Instead, all we need to define the grid representing the area for which we wish to provide data are the origin, offset and extent. This grid is known as the Domain of the Coverage. In the Range of the Coverage, we provide a value for each grid point described in the Domain. The order in which these values are provided is specified in the CoverageFunction (are the rows scanned  horizontally or vertically).
 
-
+![DomainRange](./pix/DomainRange.png)
 
 
 ## Coverage Domain
