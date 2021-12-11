@@ -8,8 +8,17 @@ Coverage models take a different approach, relying on the regularity of the posi
 - 2 offset vectors: these are usually expressed as E(ast) and N(orth) or X and Y
 - Extent: how many steps do we take in each direction
 
+## Coverage Domain Example
 
-'        <gml:domainSet>
+Domain Values:
+- Origin: (3180857.5 4008022.5)
+- Offset X: (-1, 0)
+- Offset Y: (0, 1)
+- Extent X: 50065 (= 44120 + 5945) 
+- Extent Y: 103275
+
+```
+        <gml:domainSet>
             <gml:RectifiedGrid dimension="2" gml:id="INSPIRE_WNZ_5_NAP-grid">
                 <gml:limits>
                     <gml:GridEnvelope>
@@ -27,6 +36,8 @@ Coverage models take a different approach, relying on the regularity of the posi
                 <gml:offsetVector srsName="http://localhost:8080/def/crs/EPSG/0/3035">0 1</gml:offsetVector>
             </gml:RectifiedGrid>
         </gml:domainSet>
-'
+```
+
+
 
 
