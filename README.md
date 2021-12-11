@@ -1,12 +1,6 @@
 # INSPIRE-Coverages
 A repository for collecting and distributing information on INSPIRE Coverages
 
-## Workshop 
-Direct connected with the dutch Geoforum (https://geoforum.nl/t/inspire-coverages)
-
-The INSPIRE Coverage PoC WS was held on **Thursday 18 November, 13:15 - 15:30**
-
-Details on the [Workshop](docs/Workshop.md)
 
 ## Goals
 
@@ -14,15 +8,7 @@ Provide Elevation and Bathymetry data with WCS on a 1 and 10m grid for the NL Li
 
 [Detailed overview of the PoC Goals](docs/goals.md)
 
-## Timeline
 
-2021-09-07: Kickoff
-
-End September: Data Identified and Available 
-
-End October: First WCS Online
-
-NOT! 2021-11-20: [Workshop on INSPIRE WCS Proof-of-Concept](docs/Workshop.md)
 
 ## Process
 
@@ -41,3 +27,10 @@ Wetransform: https://coverage-demo.wetransform.eu/rasdaman/ows#/services
 ## Issues
 
 Information on all [issues](docs/Issues.md)
+
+## Workshop 
+Direct connected with the dutch Geoforum (https://geoforum.nl/t/inspire-coverages)
+
+The INSPIRE Coverage PoC WS was held on **Thursday 18 November, 13:15 - 15:30**
+
+Details on the [Workshop](docs/Workshop.md)
