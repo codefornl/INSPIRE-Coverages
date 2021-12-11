@@ -8,6 +8,11 @@ Provide Elevation and Bathymetry data with WCS on a 1 and 10m grid for the NL Li
 
 [Detailed overview of the PoC Goals](docs/goals.md)
 
+## Coverages in a Nutshell
+In this section, we provide the fundamentals pertaining to Coverages. We describe the unterlying Coverage Data Models as well as the OGC Web Services foreseen for their provision.
+
+[Coverages in a Nutshell](docs/nutshell.md)
+
 
 
 ## Process
