@@ -13,9 +13,7 @@ Information on the content of the Coverage Range can be provided in the Range Ty
 
 ## Coverage Domain
 
-XXX
-
-Instead, all we need to define the basic grid are:
+The Coverage Domain defines a regular grid over the area for which data is to be provided. In order to define this grid, one must specify the following values:
 - The origin: a point from which we start our grid
 - 2 offset vectors: these are usually expressed as E(ast) and N(orth) or X and Y
 - Extent: how many steps do we take in each direction
