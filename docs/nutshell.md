@@ -11,28 +11,28 @@ Coverage models take a different approach, relying on the regularity of the posi
 ## Coverage Domain Example
 
 Domain Values:
-- Origin: (3180857.5 4008022.5)
-- Offset X: (-1, 0)
-- Offset Y: (0, 1)
-- Extent X: 50065 (= 44120 + 5945) 
-- Extent Y: 103275
+- Origin: (686000 5634300)
+- Offset X: (0, 1)
+- Offset Y: (1, 0)
+- Extent X: 2
+- Extent Y: 2
 
 ```
         <gml:domainSet>
             <gml:RectifiedGrid dimension="2" gml:id="INSPIRE_WNZ_5_NAP-grid">
                 <gml:limits>
                     <gml:GridEnvelope>
-                        <gml:low>0 -5945</gml:low>
-                        <gml:high>103275 44120</gml:high>
+                        <gml:low>0 0</gml:low>
+                        <gml:high>2 2</gml:high>
                     </gml:GridEnvelope>
                 </gml:limits>
                 <gml:axisLabels>Y X</gml:axisLabels>
                 <gml:origin>
-                    <gml:Point gml:id="INSPIRE_WNZ_5_NAP-point" srsName="http://localhost:8080/def/crs/EPSG/0/3035">
-                        <gml:pos>3180857.5 4008022.5</gml:pos>
+                    <gml:Point gml:id="INSPIRE_WNZ_5_NAP-point" srsName="http://localhost:8080/def/crs/EPSG/0/3043">
+                        <gml:pos>686000 5634300</gml:pos>
                     </gml:Point>
                 </gml:origin>
-                <gml:offsetVector srsName="http://localhost:8080/def/crs/EPSG/0/3035">-1 0</gml:offsetVector>
+                <gml:offsetVector srsName="http://localhost:8080/def/crs/EPSG/0/3035">1 0</gml:offsetVector>
                 <gml:offsetVector srsName="http://localhost:8080/def/crs/EPSG/0/3035">0 1</gml:offsetVector>
             </gml:RectifiedGrid>
         </gml:domainSet>
