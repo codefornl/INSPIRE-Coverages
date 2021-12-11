@@ -6,6 +6,10 @@ Coverage models take a different approach, relying on the regularity of the posi
 
 ![DomainRange](./pix/DomainRangeS.png)
 
+Information on the content of the Coverage Range can be provided in the Range Type Element. Additional metadata can be provided as required. In UML, the abstract representation of a Coverage is as follows.
+
+![CIS_1.0](./pix/CIS_1.0.png)
+
 
 ## Coverage Domain
 
