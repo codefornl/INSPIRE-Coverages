@@ -51,6 +51,15 @@ Domain Values:
         </gml:domainSet>
 ```
 
+## Coverage Range
+Once the Domain has been defined in this manner, one can provide the values for the individual points defined in the domain as a simple list, the Range in Coverage-Speak. If you take a step back, you see that this is actually getting close to RDF or functional logic, with the Coverage providing a function on the Domain and returning the Range as the result.
+## Range Example
+In the diagram below, we show the values within the individual coverage points:
+ 
+In actual encoding, the Coverage RangeSet would just provide these values as a simple list, as the locations are already defined by the Domain:
+[6.2, 7.1, 7.3, 5.4, 6.8, 7.4, 5.1, 5.7, 5.9]
+
+How the actual mapping between Domain Grid points and Range values happens is defined in the coverage function, that is returned together with the coverage.
 
 
 
