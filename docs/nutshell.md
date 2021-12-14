@@ -37,24 +37,24 @@ These values lead to the following grid:
 One can also express the Coverage Domain in XML:
 
 ```
-        <gml:domainSet>
-            <gml:RectifiedGrid dimension="2" gml:id="INSPIRE_WNZ_5_NAP-grid">
-                <gml:limits>
-                    <gml:GridEnvelope>
-                        <gml:low>0 0</gml:low>
-                        <gml:high>2 2</gml:high>
-                    </gml:GridEnvelope>
-                </gml:limits>
-                <gml:axisLabels>Y X</gml:axisLabels>
-                <gml:origin>
-                    <gml:Point gml:id="INSPIRE_WNZ_5_NAP-point" srsName="http://localhost:8080/def/crs/EPSG/0/3043">
-                        <gml:pos>686000 5634300</gml:pos>
-                    </gml:Point>
-                </gml:origin>
-                <gml:offsetVector srsName="http://localhost:8080/def/crs/EPSG/0/3035">1 0</gml:offsetVector>
-                <gml:offsetVector srsName="http://localhost:8080/def/crs/EPSG/0/3035">0 1</gml:offsetVector>
-            </gml:RectifiedGrid>
-        </gml:domainSet>
+<gml:domainSet>
+	<gml:RectifiedGrid dimension="2" gml:id="INSPIRE_WNZ_5_NAP-grid">
+		<gml:limits>
+			<gml:GridEnvelope>
+				<gml:low>0 0</gml:low>
+				<gml:high>2 2</gml:high>
+			</gml:GridEnvelope>
+		</gml:limits>
+		<gml:axisLabels>Y X</gml:axisLabels>
+		<gml:origin>
+			<gml:Point gml:id="INSPIRE_WNZ_5_NAP-point" srsName="http://localhost:8080/def/crs/EPSG/0/3043">
+				<gml:pos>686000 5634300</gml:pos>
+			</gml:Point>
+		</gml:origin>
+		<gml:offsetVector srsName="http://localhost:8080/def/crs/EPSG/0/3035">1 0</gml:offsetVector>
+		<gml:offsetVector srsName="http://localhost:8080/def/crs/EPSG/0/3035">0 1</gml:offsetVector>
+	</gml:RectifiedGrid>
+</gml:domainSet>
 ```
 
 ## Coverage Range
@@ -65,9 +65,25 @@ In the diagram below, we show the values within the individual coverage points:
 ![DomainRangeValues](./pix/DomainRangeValuesS.png)
  
 In actual encoding, the Coverage RangeSet would just provide these values as a simple list, as the locations are already defined by the Domain:
-[6.2, 7.1, 7.3, 5.4, 6.8, 7.4, 5.1, 5.7, 5.9]
 
-How the actual mapping between Domain Grid points and Range values happens is defined in the coverage function, that is returned together with the coverage.
+```
+<gml:rangeSet>
+	<gml:DataBlock>
+	<gml:rangeParameters/>
+		<gml:tupleList cs=" " ts=",">
+			6.2, 7.1, 7.3, 5.4, 6.8, 7.4, 5.1, 5.7, 5.9
+		</gml:tupleList>
+	</gml:DataBlock>
+</gml:rangeSet>
+```
 
+How the actual mapping between Domain Grid points and Range values happens is defined in the coverage function, that is returned together with the coverage. The sequenceRule indicates the order in which the axes are scanned to deliver the values, while the startPoint indicates where within the entire coverage the provided section begins.
 
-
+```
+<gml:coverageFunction>
+	<gml:GridFunction>
+		<gml:sequenceRule axisOrder="+1 +2">Linear</gml:sequenceRule>
+		<gml:startPoint>0 0</gml:startPoint>
+	</gml:GridFunction>
+</gml:coverageFunction>
+```
