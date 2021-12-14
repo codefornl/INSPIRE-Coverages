@@ -34,4 +34,4 @@ For the Theme Elevation, the **Zoned Geographic Grid:** must be used based on IR
 
 _Note: 2.2.1 specifies the Equal Area Grid_
 
-Based on this, we can use EPSG:4258 for the horizontal component of the Coverage.
+Based on this, we can use **EPSG::4258** for the horizontal component of the Coverage.
