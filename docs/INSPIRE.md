@@ -2,7 +2,8 @@
 
 ![Themes](./pix/Themes.png)
 
-## INSPIRE Themes with Coverage Models:
+## INSPIRE Themes with Coverage Models
+The following INSPIRE Themes make use of Coverage Models:
 - Elevation (EL) 
 - Geology (GE) 
 - Land cover (LC)
