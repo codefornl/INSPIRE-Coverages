@@ -1,5 +1,7 @@
 # Coverages in INSPIRE
+
 ![Themes](./pix/Themes.png)
+
 ## INSPIRE Themes with Coverage Models:
 - Elevation (EL) 
 - Geology (GE) 
