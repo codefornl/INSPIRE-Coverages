@@ -1,8 +1,8 @@
 # Coverages in INSPIRE
-
+![Themes](./pix/Themes.png)
 ## INSPIRE Themes with Coverage Models:
-- Elevation (EL) ![EL](./pix/EL.png)
-- Geology (GE) ![GE](./pix/GE.png)
+- Elevation (EL) 
+- Geology (GE) 
 - Land cover (LC)
 - Land use (LU)
 - Natural risk zones (NZ)
