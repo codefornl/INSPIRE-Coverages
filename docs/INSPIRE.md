@@ -12,3 +12,10 @@
 - Soil (SO)
 - Energy resources (ER)
 - Species distribution (SD) – App. schema deprecated
+
+## INSPIRE Theme Geographical grid systems
+![gg](./pix/gg.png)
+
+In addition to the INSPIRE Themes that use grids, there is also a Geographical Grid Systems Theme, that specifies the grids to be utilized to define the Domain of the Coverage.
+
+
