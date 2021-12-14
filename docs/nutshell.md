@@ -57,6 +57,30 @@ One can also express the Coverage Domain in XML:
 </gml:domainSet>
 ```
 
+## Range Type
+The Range Type of the coverage indicates what the values provided in the Range represent. When providing elevation data, the vertical CRS, together with the unit of measurement utilized by this vertical component, should be provided. While INSPIRE originally foresaw the use of EVRF2007 height - EPSG:5621, this has now been superceeded by EVRF2019 mean-tide height - EPSG:9390. This CRS has the unit of measurement 'm' and direction 'up'.
+
+In XML, the rangeType is encoded as follows:
+
+```
+<gmlcov:rangeType>
+    <swe:DataRecord>
+        <swe:field name="Elevation">
+            <swe:Quantity definition="epsg::9390" axisID="Z">
+                <swe:label>Elevation</swe:label>
+                <swe:description>EVRF2019 mean-tide height - EPSG:9390</swe:description>
+                <swe:nilValues>
+                    <swe:NilValues>
+                        <swe:nilValue reason="">1000000.0</swe:nilValue>
+                    </swe:NilValues>
+                </swe:nilValues>
+                <swe:uom code="m"/>
+            </swe:Quantity>
+        </swe:field>
+    </swe:DataRecord>
+</gmlcov:rangeType>
+```
+
 ## Coverage Range
 Once the Domain has been defined in this manner, one can provide the values for the individual points defined in the domain as a simple list, the Range in Coverage-Speak. If you take a step back, you see that this is actually getting close to RDF or functional logic, with the Coverage providing a function on the Domain and returning the Range as the result.
 ## Range Example
@@ -76,6 +100,8 @@ In actual encoding, the Coverage RangeSet would just provide these values as a s
 	</gml:DataBlock>
 </gml:rangeSet>
 ```
+
+## Coverage Function
 
 How the actual mapping between Domain Grid points and Range values happens is defined in the coverage function, that is returned together with the coverage. The sequenceRule indicates the order in which the axes are scanned to deliver the values, while the startPoint indicates where within the entire coverage the provided section begins.
 
