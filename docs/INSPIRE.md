@@ -27,9 +27,13 @@ Two different grid systems are foreseen for use within INSPIRE:
 For the Theme Elevation, the **Zoned Geographic Grid:** must be used based on IR Requirement - Annex III Section 1.7.2 - Geographic Grids to be used for Elevation Data. This requirement further specifies:
 
 > (1) By way of derogation from the requirement in Section 2.2 of Annex II, any grid compatible with one of the following coordinate reference systems may be used for making gridded Elevation data available:
+> 
 > – two-dimensional geodetic coordinates (latitude and longitude) based on a datum specified in Section 1.2 of Annex II and using the parameters of the GRS80 ellipsoid;
+> 
 > – plane coordinates using the ETRS89 Lambert Conformal Conic coordinate reference system;
+> 
 > – plane coordinates using the ETRS89 Transverse Mercator coordinate reference system.
+> 
 > The grid specified in 2.2.1 of Annex II shall not be used. 
 
 _Note: 2.2.1 specifies the Equal Area Grid_
