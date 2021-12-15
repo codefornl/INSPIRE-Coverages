@@ -13,6 +13,10 @@ In this section, we provide the fundamentals pertaining to Coverages. We describ
 
 [Coverages in a Nutshell](docs/nutshell.md)
 
+## Coverages in INSPIRE
+While this PoC is focused on the provision of Elevation Coverages, INSPIRE utilizes coverages for a diverse range of Themes. In this section, we provide information on the wider context of Coverages in INSPIRE.
+
+[Coverages in INSPIRE](docs/INSPIRE.md)
 
 
 ## Process
