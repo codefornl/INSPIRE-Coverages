@@ -2,6 +2,10 @@
 
 ![Themes](./pix/Themes.png)
 
+## Overview
+- [INSPIRE Themes with Coverage Models](./nutshell.md#coverage-domain)
+- [INSPIRE Theme Geographical grid systems](./nutshell.md#coverage-domain-example)
+
 ## INSPIRE Themes with Coverage Models
 The following INSPIRE Themes make use of Coverage Models:
 - Elevation (EL) 
