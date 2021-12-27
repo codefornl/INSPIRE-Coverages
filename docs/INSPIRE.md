@@ -53,5 +53,5 @@ For the provision of Coverages, the [Open Geospatial Consortium (OGC)](https://w
 - [Web Coverage Service (WCS)](https://www.ogc.org/standards/wcs): allows for subsetting, retrieving data in diverse formats
 - [Web Coverage Processing Service (WCPS)](https://www.ogc.org/standards/wcps): adds server side processing to WCS
 
-
+In order to be utilized within INSPIRE, download services must be implemented in a manner that satisfies the requirements of the [Network Services Regulation](https://inspire.ec.europa.eu/Legislation/Network-Services/41). As some of these requirements go beyond what is specified in the OWS, some extensions are required. Pertaining to WCS, the [Technical Guidance for the implementation of INSPIRE Download Services using Web Coverage Services (WCS)](https://inspire.ec.europa.eu/id/document/tg/download-wcs) details what configurations and extensions are required.
 
