@@ -1,6 +1,11 @@
 # Issues
 
+## CRS
 
+## RangeType Encoding
+
+
+# OLD 
 ## Grid resolution
 INSPIRE thinks in powers of 10, grids are 1, 10, 100.... m. Various existing EU projects think in 20m grids (unclear what the CRS is)
 Approach: provide 1 & 10 m under INSPIRE, continue to provide 20m for the other projects but complying to INSPIRE WCS guidelines. Need to determine CRS for this
