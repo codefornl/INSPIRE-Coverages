@@ -20,18 +20,17 @@ One XML Snippet must be created per Coverage ID available via the WCS.
 This requires the provision of the following information, with the values from the example below in []:
 - beginLifespanVersion: the time this electronic object was created [2021-04-09T00:00:00+01:00]
 - domainExtent: spatial extent of the coverage in WGS84 coordinates
-  - westBoundLongitude: western extent of the coverage
-  - eastBoundLongitude: eastern extent of the coverage
-  - southBoundLatitude: southern extent of the coverage
-  - northBoundLatitude: northern extent of the coverage
+  - westBoundLongitude: western extent of the coverage [3.9632793]
+  - eastBoundLongitude: eastern extent of the coverage [4.8789582]
+  - southBoundLatitude: southern extent of the coverage [51.8526434]
+  - northBoundLatitude: northern extent of the coverage [52.0129335]
 - inspireId: INSPIRE identifier of the coverage
-  - localId: A local identifier, assigned by the data provider. For consistency, use the CoverageID
-  - namespace: Namespace uniquely identifying the data source of the spatial object.
-- propertyType: the elevation property represented by the elevation grid coverage. Must be 'height' or 'depth'.
-- surfaceType: the type of elevation surface that the coverage describes in relation to the Earth's bare surface. Must be 'DTM' or 'DSM'.
+  - localId: A local identifier, assigned by the data provider. For consistency, use the CoverageID [INSPIRE_WNZ_5_NAP]
+  - namespace: Namespace uniquely identifying the data source of the spatial object [https://www.rijkswaterstaat.nl]
+- propertyType: the elevation property represented by the elevation grid coverage. Must be 'height' or 'depth'  [depth]
+- surfaceType: the type of elevation surface that the coverage describes in relation to the Earth's bare surface. Must be 'DTM' or 'DSM'  [DTM]
 
-In the following XML example
-
+In the following XML example, the values listed above are encoded:
 
 ```
 <?xml version="1.0" encoding="UTF-8"?>
