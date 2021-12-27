@@ -21,7 +21,7 @@ The following INSPIRE Themes make use of Coverage Models:
 ## INSPIRE Theme Geographical grid systems
 ![gg](./pix/ggS.png)
 
-In addition to the INSPIRE Themes that use grids, there is also a Geographical Grid Systems Theme, that specifies the grids to be utilized to define the Domain of the Coverage.
+In addition to the INSPIRE Themes that use grids, there is also a [Geographical Grid Systems Theme](https://inspire.ec.europa.eu/Themes/131/2892), that specifies the grids to be utilized to define the Domain of the Coverage.
 
 Two different grid systems are foreseen for use within INSPIRE:
 
