@@ -1,5 +1,9 @@
 # Providing Coverages
 
+## Overview
+- [Data Sources](./INSPIRE.md#inspire-themes-with-coverage-models)
+- [Additional INSPIRE Attributes](./INSPIRE.md#inspire-theme-geographical-grid-systems)
+
 ## Data Sources
 The original elevation source data is often point/vector based, this must first be transformed to a grid in accordance with the requirements to [Geographical grid systems](https://github.com/codefornl/INSPIRE-Coverages/blob/main/docs/INSPIRE.md#inspire-theme-geographical-grid-systems). 
 For the purposes of this PoC, EPSG::4258 will be used. 
