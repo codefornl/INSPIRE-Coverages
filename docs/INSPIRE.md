@@ -5,7 +5,8 @@
 ## Overview
 - [INSPIRE Themes with Coverage Models](./INSPIRE.md#inspire-themes-with-coverage-models)
 - [INSPIRE Theme Geographical grid systems](./INSPIRE.md#inspire-theme-geographical-grid-systems)
-- [Download Services for Coverages](./INSPIRE.md#inspire-theme-geographical-grid-systems)
+- [Download Services for Coverages](./INSPIRE.md#download-services-for-coverages)
+- [Required Extension to WCS](./INSPIRE.md)
 
 ## INSPIRE Themes with Coverage Models
 The following INSPIRE Themes make use of Coverage Models:
@@ -55,3 +56,31 @@ For the provision of Coverages, the [Open Geospatial Consortium (OGC)](https://w
 
 In order to be utilized within INSPIRE, download services must be implemented in a manner that satisfies the requirements of the [Network Services Regulation](https://inspire.ec.europa.eu/Legislation/Network-Services/41). As some of these requirements go beyond what is specified in the OWS, some extensions are required. Pertaining to WCS, the [Technical Guidance for the implementation of INSPIRE Download Services using Web Coverage Services (WCS)](https://inspire.ec.europa.eu/id/document/tg/download-wcs) details what configurations and extensions are required.
 
+## Required Extension to WCS
+The main modification to WCS pertains to the contents of the GetCapabilities Response document.
+
+```
+<ows:ExtendedCapabilities>
+    <inspire_dls:ExtendedCapabilities>
+        <inspire_common:MetadataUrl xsi:type="inspire_common:resourceLocatorType">
+            <inspire_common:URL>
+                https://inspire…nl/fbd0d3da-e025-4728-8fd5-22ad5f530511
+            </inspire_common:URL>
+            <inspire_common:MediaType>application/xml</inspire_common:MediaType>
+        </inspire_common:MetadataUrl>
+        <inspire_common:SupportedLanguages>
+            <inspire_common:DefaultLanguage>
+                <inspire_common:Language>eng</inspire_common:Language>
+            </inspire_common:DefaultLanguage>
+        </inspire_common:SupportedLanguages>
+        <inspire_common:ResponseLanguage>
+            <inspire_common:Language>eng</inspire_common:Language>
+        </inspire_common:ResponseLanguage>
+        <inspire_dls:SpatialDataSetIdentifier metadataURL="https://inspire...nl/f670705f-f4e9-11e6-81e4"> 
+            <inspire_common:Code>INSPIRE_WNZ_5_NAP</inspire_common:Code>
+            <inspire_common:Namespace>https://inspire…nl/rasdaman/ows</inspire_common:Namespace>
+        </inspire_dls:SpatialDataSetIdentifier>
+        ...
+    </inspire_dls:ExtendedCapabilities>
+</ows:ExtendedCapabilities>
+```
