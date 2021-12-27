@@ -57,30 +57,44 @@ For the provision of Coverages, the [Open Geospatial Consortium (OGC)](https://w
 In order to be utilized within INSPIRE, download services must be implemented in a manner that satisfies the requirements of the [Network Services Regulation](https://inspire.ec.europa.eu/Legislation/Network-Services/41). As some of these requirements go beyond what is specified in the OWS, some extensions are required. Pertaining to WCS, the [Technical Guidance for the implementation of INSPIRE Download Services using Web Coverage Services (WCS)](https://inspire.ec.europa.eu/id/document/tg/download-wcs) details what configurations and extensions are required.
 
 ## Required Extension to WCS
-The main modification to WCS pertains to the contents of the GetCapabilities Response document.
+The modification required to align WCS with the requirements laid down in the Network Services Regulation pertains to the contents of the GetCapabilities Response document. The following information must be provided in the ows:ExtendedCapabilities section of the GetCapabilities Response:
+- Service Metadata: URL
+- Supported and Response Language: ISO 3-Letter Code
+- Dataset Metadata: URL
+- CoverageID: Identifier
+- Download Service Location: URL
+
+In the following XML, these concepts are marked with comments
 
 ```
 <ows:ExtendedCapabilities>
     <inspire_dls:ExtendedCapabilities>
         <inspire_common:MetadataUrl xsi:type="inspire_common:resourceLocatorType">
             <inspire_common:URL>
+                <!-- Service Metadata: URL -->
                 https://inspire…nl/fbd0d3da-e025-4728-8fd5-22ad5f530511
             </inspire_common:URL>
             <inspire_common:MediaType>application/xml</inspire_common:MediaType>
         </inspire_common:MetadataUrl>
         <inspire_common:SupportedLanguages>
             <inspire_common:DefaultLanguage>
+                <!-- Supported Language: ISO 3-Letter Code -->
                 <inspire_common:Language>eng</inspire_common:Language>
             </inspire_common:DefaultLanguage>
         </inspire_common:SupportedLanguages>
         <inspire_common:ResponseLanguage>
+            <!-- Response Language: ISO 3-Letter Code -->
             <inspire_common:Language>eng</inspire_common:Language>
         </inspire_common:ResponseLanguage>
+        <!-- Dataset Metadata: URL -->
         <inspire_dls:SpatialDataSetIdentifier metadataURL="https://inspire...nl/f670705f-f4e9-11e6-81e4"> 
+            <!-- CoverageID: Identifier -->
             <inspire_common:Code>INSPIRE_WNZ_5_NAP</inspire_common:Code>
+            <!-- Download Service Location: URL -->
             <inspire_common:Namespace>https://inspire…nl/rasdaman/ows</inspire_common:Namespace>
         </inspire_dls:SpatialDataSetIdentifier>
         ...
     </inspire_dls:ExtendedCapabilities>
 </ows:ExtendedCapabilities>
 ```
+At present, rasdaman has implemented this extension in their WCS implementation. GeoSolutions is working on the extension for the GeoServer WCS (27.12.21)
