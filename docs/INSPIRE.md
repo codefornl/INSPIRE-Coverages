@@ -104,13 +104,22 @@ At present, rasdaman has implemented this extension in their WCS implementation.
 
 ## INSPIRE Data Models and Schemas
 
-The way the INSPIRE Data Models utilizing Coverages have been specified and then transposed to XML Schema and provided as XSD files, it is not possible to provide them via a WCS. This is due to the use of class derivation for adding additional required attributes to the INSPIRE coverage classes, instead of utilizing the metadata element foreseen in all coverage classes. In order to provide the data via WCS, the data models must first be revised as described in the following section.
+The way the INSPIRE Data Models utilizing Coverages have been specified and then transposed to XML Schema and provided as XSD files, it is not possible to provide them via a WCS. This is due to the use of class derivation for adding additional required attributes to the INSPIRE coverage classes, instead of utilizing the metadata element foreseen in all coverage classes. In order to provide the data via WCS, the data models must first be revised as described in the following sections. This approach has been documented as an [INSPIRE Good Practice](https://inspire.ec.europa.eu/portfolio/good-practice-library). More information is available at: https://inspire.ec.europa.eu/good-practice/ogc-compliant-inspire-coverage-data-and-service-implementation
 
 ### INSPIRE Elevation Data Model
 
-
+In the following diagram, one sees how the ElevationGridCoverage class has been derived from RectifiedGridCoverage:
 
 ![INSPIRE Elevation Data Model](./pix/INSPIRE%20Elevation%20Model.png)
 
+However, this leads to the ElevationGridCoverage class being extended by all the additional attributes, leading to the following:
 
+![ElevationGridCoverage all attributes](./pix/INSPIRE%20Elevation%20Extension%20Example.png)
 
+### INSPIRE Coverage Good Practice Model
+
+In order to provide the additional attributes specified for the ElevationGridCoverage class via the metadata element of RectifiedGridCoverage, we must first create a new featureType with these attributes as shown below:
+
+![ElevationGridCoverageMetadata](./pix/Elevation%20Good%20Practice.png)
+
+The schema for this type is available from https://schema.datacove.eu/ElevationGridCoverageMetadata.xsd
