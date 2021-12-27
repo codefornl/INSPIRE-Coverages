@@ -8,15 +8,15 @@
 
 ## INSPIRE Themes with Coverage Models
 The following INSPIRE Themes make use of Coverage Models:
-- Elevation (EL) 
-- Geology (GE) 
-- Land cover (LC)
-- Land use (LU)
-- Natural risk zones (NZ)
-- Orthoimagery (OI)
-- Soil (SO)
-- Energy resources (ER)
-- Species distribution (SD) – App. schema deprecated
+- [Elevation (EL)](https://inspire.ec.europa.eu/Themes/118/2892) 
+- [Geology (GE)](https://inspire.ec.europa.eu/Themes/128/2892) 
+- [Land cover (LC)](https://inspire.ec.europa.eu/Themes/123/2892)
+- [Land use (LU)](https://inspire.ec.europa.eu/Themes/129/2892)
+- [Natural risk zones (NZ)](https://inspire.ec.europa.eu/Themes/140/2892)
+- [Orthoimagery (OI)](https://inspire.ec.europa.eu/Themes/124/2892)
+- [Soil (SO)](https://inspire.ec.europa.eu/Themes/127/2892)
+- [Energy resources (ER)](https://inspire.ec.europa.eu/Themes/134/2892)
+- [Species distribution (SD) – App. schema deprecated](https://inspire.ec.europa.eu/Themes/133/2892)
 
 ## INSPIRE Theme Geographical grid systems
 ![gg](./pix/ggS.png)
