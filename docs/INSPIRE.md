@@ -122,4 +122,4 @@ In order to provide the additional attributes specified for the ElevationGridCov
 
 ![ElevationGridCoverageMetadata](./pix/Elevation%20Good%20Practice.png)
 
-The schema for this type is available from https://schema.datacove.eu/ElevationGridCoverageMetadata.xsd
+The schema for this featureType is available from https://schema.datacove.eu/ElevationGridCoverageMetadata.xsd
