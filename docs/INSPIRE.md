@@ -103,3 +103,14 @@ In the following XML, these concepts are marked with comments
 At present, rasdaman has implemented this extension in their WCS implementation. At time of writing (27.12.2021), GeoSolutions is working on the extension for the GeoServer WCS. 
 
 ## INSPIRE Data Models and Schemas
+
+The way the INSPIRE Data Models utilizing Coverages have been specified and then transposed to XML Schema and provided as XSD files, it is not possible to provide them via a WCS. This is due to the use of class derivation for adding additional required attributes to the INSPIRE coverage classes, instead of utilizing the metadata element foreseen in all coverage classes. In order to provide the data via WCS, the data models must first be revised as described in the following section.
+
+### INSPIRE Elevation Data Model
+
+
+
+![INSPIRE Elevation Data Model](./pix/INSPIRE%20Elevation%20Model.png)
+
+
+
