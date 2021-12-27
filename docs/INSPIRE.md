@@ -49,4 +49,9 @@ Based on this, we can use **EPSG::4258** for the horizontal component of the Cov
 
 As Coverages are formally features, one can provide them via a Web Feature Service (WFS). However, this tends to cause issues due to the size of the coverages, usually many GB. One approach is to subdivide the data into tiles, and providing an individual coverage for each tile. However, this solution is not satisfactory for users, as they must merge the coverages for their area of interest, while at the same time being forced to download data beyond this area of interest.
 
-With
+For the provision of Coverages, the [Open Geospatial Consortium (OGC)](https://www.ogc.org/) has created two dedicated web services within the wider OGC Web Service (OWS) Suite:
+- [Web Coverage Service (WCS)](https://www.ogc.org/standards/wcs): allows for subsetting, retrieving data in diverse formats
+- [Web Coverage Processing Service (WCPS)](https://www.ogc.org/standards/wcps): adds server side processing to WCS
+
+
+
