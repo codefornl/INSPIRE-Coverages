@@ -63,3 +63,15 @@ In the following XML example, the values listed above are encoded:
 </el-covmd-ks:ElevationGridCoverageMetadata>
 ```
 
+## Importing Data
+
+Putting it all together, in order to import one coverage, you need:
+- 1 Coverage ID
+- Gridded data, e.g. Tif
+  - Can be multiple files
+- 1 XML Snippet (as described above in [Additional INSPIRE Attributes](./ProvidingCoverages.md#additional-inspire-attributes))
+- Language (usually default English)
+- Metadata URLS for
+  - Service Metadata (ISO 19119)
+  - Dataset Metadata (ISO 19115)
+
