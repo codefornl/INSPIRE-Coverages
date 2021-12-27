@@ -7,6 +7,9 @@
 - [INSPIRE Theme Geographical grid systems](./INSPIRE.md#inspire-theme-geographical-grid-systems)
 - [Download Services for Coverages](./INSPIRE.md#download-services-for-coverages)
 - [Required Extension to WCS](./INSPIRE.md)
+- [INSPIRE Data Models and Schemas](./INSPIRE.md)
+
+
 
 ## INSPIRE Themes with Coverage Models
 The following INSPIRE Themes make use of Coverage Models:
@@ -97,4 +100,6 @@ In the following XML, these concepts are marked with comments
     </inspire_dls:ExtendedCapabilities>
 </ows:ExtendedCapabilities>
 ```
-At present, rasdaman has implemented this extension in their WCS implementation. GeoSolutions is working on the extension for the GeoServer WCS (27.12.21)
+At present, rasdaman has implemented this extension in their WCS implementation. At time of writing (27.12.2021), GeoSolutions is working on the extension for the GeoServer WCS. 
+
+## INSPIRE Data Models and Schemas
