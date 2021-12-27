@@ -6,8 +6,8 @@
 - [INSPIRE Themes with Coverage Models](./INSPIRE.md#inspire-themes-with-coverage-models)
 - [INSPIRE Theme Geographical grid systems](./INSPIRE.md#inspire-theme-geographical-grid-systems)
 - [Download Services for Coverages](./INSPIRE.md#download-services-for-coverages)
-- [Required Extension to WCS](./INSPIRE.md)
-- [INSPIRE Data Models and Schemas](./INSPIRE.md)
+- [Required Extension to WCS](./INSPIRE.md#required-extension-to-wcs)
+- [INSPIRE Data Models and Schemas](./INSPIRE.md#inspire-data-models-and-schemas)
 
 
 
