@@ -5,6 +5,7 @@
 ## Overview
 - [INSPIRE Themes with Coverage Models](./INSPIRE.md#inspire-themes-with-coverage-models)
 - [INSPIRE Theme Geographical grid systems](./INSPIRE.md#inspire-theme-geographical-grid-systems)
+- [Download Services for Coverages](./INSPIRE.md#inspire-theme-geographical-grid-systems)
 
 ## INSPIRE Themes with Coverage Models
 The following INSPIRE Themes make use of Coverage Models:
@@ -43,3 +44,9 @@ For the Theme Elevation, the **Zoned Geographic Grid MUST** be used based on IR 
 _Note: 2.2.1 specifies the Equal Area Grid_
 
 Based on this, we can use **EPSG::4258** for the horizontal component of the Coverage.
+
+## Download Services for Coverages
+
+As Coverages are formally features, one can provide them via a Web Feature Service (WFS). However, this tends to cause issues due to the size of the coverages, usually many GB. One approach is to subdivide the data into tiles, and providing an individual coverage for each tile. However, this solution is not satisfactory for users, as they must merge the coverages for their area of interest, while at the same time being forced to download data beyond this area of interest.
+
+With
