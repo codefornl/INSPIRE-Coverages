@@ -1,13 +1,11 @@
 # Coverages in a Nutshell
 ## Overview
-- []()
-- []()
-- []()
-- []()
+- [Coverage Domain](./nutshell.md#coverage-domain)
+- [Coverage Domain Example](./nutshell.md#coverage-domain-example)
+- [Range Type](./nutshell.md#range-type)
+- [Coverage Range](./nutshell.md#coverage-range)
+- [Range Example](./nutshell.md#range-example)
 - [Coverage Function](./nutshell.md#coverage-function)
-
-
-
 
 While a lot of “normal” spatial data relies on points, lines and polygons for the representation of spatial objects, this approach doesn’t work when providing data over a larger area where the values vary across the area. A nice example of this is Elevation, what “normal” spatial feature would one use to represent the varying elevation values across a country? While one could serve lots of individual points or little polygons, one for each measurement point, such an approach becomes very inefficient when dealing with high resolution data, e.g. an elevation point every 5m.
 
