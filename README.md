@@ -18,6 +18,15 @@ While this PoC is focused on the provision of Elevation Coverages, INSPIRE utili
 
 [Coverages in INSPIRE](docs/INSPIRE.md)
 
+## Providing Coverages within INSPIRE
+In this section, we start putting the theory from the sections above into praxis. We show what information must be collected in addition to the elevation data, and how to import this to a WCS server, using [radsaman](http://rasdaman.org/) as an example. We also discuss some problems faces, and how to resolve them.
+
+[Providing Coverages](docs/ProvidingCoverages.md)
+
+## Using Coverages
+Once the elevation data is available via WCS, data for the spatial area of interest can be requested from this service. In this section, we describe how to utilize WCS to access data, as well as use it via common GIS tools.
+
+[Using Coverages](docs/UsingCoverages.md)
 
 ## Process
 
