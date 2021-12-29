@@ -36,6 +36,16 @@ For the provision of elevation data in rasdaman, we must add the following ingre
 
 In addition, setting ```config"."mock": true``` is useful while debugging a recipe. While this value is set to ```true```, all steps except for the actual import will be performed, allowing for checks before starting the actual timeconsuming import process. Once the recipe is deamed valid, this value should be set to ```false```, triggering the actual data import.
 
+Once all ingredients have been added to the recipe, the import is performed by running wcst_import.sh, with the recipe file as its parameter as follows:
+
+```$ wcst_import.sh path/to/my_ingredients.json```
+
+At present, the XML Snippet containing the additional INSPIRE attributes must be added manually using the rasdaman admin endpoint UpdateCoverageMetadata. Using ```curl``` one can easily specify the user, password and additional attributes (coverage ID and location of XML Snippet) in the request as follows:
+
+```curl --user petauser:petapasswd -F "coverageId=test_mr_metadata" -F "file=@/home/rasdaman/Downloads/test_metadata.xml" "http://localhost:8080/rasdaman/admin/UpdateCoverageMetadata"```
+
+## Full Import Recipe
+Below, you find the recipe will all ingredients described above contained. This file can also be [directly downloaded](https://github.com/codefornl/INSPIRE-Coverages/blob/main/docs/ingest_elevation_4258.json)
 
 ```
 {
