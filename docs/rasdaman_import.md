@@ -34,6 +34,61 @@ For the provision of elevation data in rasdaman, we must add the following ingre
   - name: Elevation ```"recipe"."options"."coverage"."slicer"."bands"."name": "Elevation"```
   - identifier: Grey ```"recipe"."options"."coverage"."slicer"."bands"."identifier": "Grey"```
 
+In addition, setting ```config"."mock": true``` is useful while debugging a recipe. While this value is set to ```true```, all steps except for the actual import will be performed, allowing for checks before starting the actual timeconsuming import process. Once the recipe is deamed valid, this value should be set to ```false```, triggering the actual data import.
 
-mock
 
+```
+{
+    "config": {
+        "service_url": "http://localhost:8080/rasdaman/ows",
+        "tmp_directory": "/tmp/",
+        "mock": false,
+        "automated": true,
+        "track_files": false
+    },
+    "input": {
+        "coverage_id": "INSPIRE_WNZ_5_NAP",
+        "paths": [
+            "*.tif"
+        ]
+    },
+    "recipe": {
+        "name": "general_coverage",
+        "options": {
+            "coverage": {
+                "crs": "EPSG/0/4258",
+                "metadata": {
+                    "type": "xml",
+                    "global": {
+                        "Title": "'metadata placeholder'"
+                    }
+                },
+                "slicer": {
+                    "type": "gdal",
+                    "bands": [{
+                        "name": "Elevation",
+                        "identifier": "Grey"
+                    }],
+                    "axes": {
+                        "long": {
+                            "min": "${gdal:minX}",
+                            "max": "${gdal:maxX}",
+                            "crsOrder": 2,
+                            "gridOrder": 1,
+                            "resolution": "${gdal:resolutionX}"
+                        },
+                        "lat": {
+                            "min": "${gdal:minY}",
+                            "max": "${gdal:maxY}",
+                            "crsOrder": 1,
+                            "gridOrder": 2,
+                            "resolution": "${gdal:resolutionY}"
+                        }
+                    }
+                }
+            },
+            "tiling": "ALIGNED [0:1023, 0:1023]"
+        }
+    }
+}
+```
