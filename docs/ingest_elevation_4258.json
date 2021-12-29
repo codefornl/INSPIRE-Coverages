@@ -1,0 +1,53 @@
+{
+    "config": {
+        "service_url": "http://localhost:8080/rasdaman/ows",
+        "tmp_directory": "/tmp/",
+        "mock": false,
+        "automated": true,
+        "track_files": false
+    },
+    "input": {
+        "coverage_id": "INSPIRE_WNZ_5_NAP",
+        "paths": [
+            "*.tif"
+        ]
+    },
+    "recipe": {
+        "name": "general_coverage",
+        "options": {
+            "coverage": {
+                "crs": "EPSG/0/4258",
+                "metadata": {
+                    "type": "xml",
+                    "global": {
+                        "Title": "'metadata placeholder'"
+                    }
+                },
+                "slicer": {
+                    "type": "gdal",
+                    "bands": [{
+                        "name": "Elevation",
+                        "identifier": "Grey"
+                    }],
+                    "axes": {
+                        "long": {
+                            "min": "${gdal:minX}",
+                            "max": "${gdal:maxX}",
+                            "crsOrder": 2,
+                            "gridOrder": 1,
+                            "resolution": "${gdal:resolutionX}"
+                        },
+                        "lat": {
+                            "min": "${gdal:minY}",
+                            "max": "${gdal:maxY}",
+                            "crsOrder": 1,
+                            "gridOrder": 2,
+                            "resolution": "${gdal:resolutionY}"
+                        }
+                    }
+                }
+            },
+            "tiling": "ALIGNED [0:1023, 0:1023]"
+        }
+    }
+}
