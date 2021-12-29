@@ -3,8 +3,8 @@
 
 ## Overview
 - [Installing rasdaman](./rasdaman_import.md#installing-rasdaman)
-- [Server Requirements](./ProvidingCoverages.md#importing-data)
-- [Importig Elevation Data](./rasdaman_import.md#importig-elevation-data)
+- [Server Requirements](./rasdaman_import.md#server-requirements)
+- [Importing Elevation Data](./rasdaman_import.md#importing-elevation-data)
 
 ## Installing rasdaman
 Before we can import the coverages to the WCS, we must first install the WCS server. For rasdaman, all information required for installation are available at the following site:
@@ -12,10 +12,25 @@ Before we can import the coverages to the WCS, we must first install the WCS ser
 https://doc.rasdaman.org/02_inst-guide.html
 
 ## Server Requirements
+While especially the number of CPUs required for a WCS server is hard to quantify, as this is also dependant on user behavior, the following information provides a general rule of thumb pertaining to server scoping:
+- RAM: 64GB
+- Hard Disk: Approx 3 x Data Volume
+- CPUs: Depends on degree of parallelization
+  - rasdaman runs on 4 cores in parallel
+  - 8 CPUs are a basic recommendation, but more will be required if many parallel requests are received
 
+As providing a valid estimate for the ideal number of CPUs for a given WCS, it is recommended to utilize a Virtual Machine (VM) for the WCS server, as VMs allow for simple scaling based on actual usage and performance
 
+## Importing Elevation Data
+An import script, wcst_import.sh, is provided together with the rasdaman server deployment. This script is configured by a so-called 'recipe' file in which the necessary 'ingredients' have been added. For more details on wcst_import.sh, recipes and ingredients, see: https://doc.rasdaman.org/05_geo-services-guide.html#data-import
 
-
-## Importig Elevation Data
+For the provision of elevation data in rasdaman, we must add the following ingredients to the recipe in order to configure wcst_import:
+- Local rasdaman service URL
+- Coverage ID
+- Path to gridded data files, e.g. Tif
+- CRS, should always be EPSG/0/3035
+- Bands, in the case of Elevation, should be
+  - name: Elevation
+  - identifier: Grey
 
 
