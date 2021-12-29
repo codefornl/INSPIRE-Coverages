@@ -25,12 +25,15 @@ As providing a valid estimate for the ideal number of CPUs for a given WCS, it i
 An import script, wcst_import.sh, is provided together with the rasdaman server deployment. This script is configured by a so-called 'recipe' file in which the necessary 'ingredients' have been added. For more details on wcst_import.sh, recipes and ingredients, see: https://doc.rasdaman.org/05_geo-services-guide.html#data-import
 
 For the provision of elevation data in rasdaman, we must add the following ingredients to the recipe in order to configure wcst_import:
-- Local rasdaman service URL
-- Coverage ID
-- Path to gridded data files, e.g. Tif
-- CRS, should always be EPSG/0/3035
+- Local rasdaman service URL ```"config"."service_url": "http://localhost:8080/rasdaman/ows"```
+  - Note: this will usually be localhost, as Transactional WCS (WCST) is usually only enabled for localhost
+- Coverage ID ```"input"."coverage_id": "INSPIRE_WNZ_5_NAP"```
+- Path to gridded data files, e.g. Tif files ```"input"."paths": ["*.tif"]```
+- CRS, should always be EPSG/0/3035 ```"recipe"."options"."coverage"."crs": "EPSG/0/4258"```
 - Bands, in the case of Elevation, should be
-  - name: Elevation
-  - identifier: Grey
+  - name: Elevation ```"recipe"."options"."coverage"."slicer"."bands"."name": "Elevation"```
+  - identifier: Grey ```"recipe"."options"."coverage"."slicer"."bands"."identifier": "Grey"```
 
+
+mock
 
