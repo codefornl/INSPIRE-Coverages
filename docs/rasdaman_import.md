@@ -45,6 +45,8 @@ At present, the XML Snippet containing the additional INSPIRE attributes must be
 
 ```curl --user petauser:petapasswd -F "coverageId=test_mr_metadata" -F "file=@/home/rasdaman/Downloads/test_metadata.xml" "http://localhost:8080/rasdaman/admin/UpdateCoverageMetadata"```
 
+After these steps have been performed, the coverage will be available from the WCS under the Coverage ID specified.
+
 ## Full Import Recipe
 Below, you find the recipe will all ingredients described above contained. This file can also be [directly downloaded](https://github.com/codefornl/INSPIRE-Coverages/blob/main/docs/ingest_elevation_4258.json)
 
