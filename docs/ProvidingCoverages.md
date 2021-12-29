@@ -6,8 +6,6 @@
 - [Importing Data](./ProvidingCoverages.md#importing-data)
 - [Importing Data with rasdaman](./rasdaman_import.md)
 
-
-
 ## Data Sources
 The original elevation source data is often point/vector based, this must first be transformed to a grid in accordance with the requirements to [Geographical grid systems](https://github.com/codefornl/INSPIRE-Coverages/blob/main/docs/INSPIRE.md#inspire-theme-geographical-grid-systems). 
 For the purposes of this PoC, EPSG::4258 will be used. 
@@ -80,3 +78,29 @@ Putting it all together, in order to import one coverage, you need:
   - Dataset Metadata (ISO 19115)
 
 In addition, you need a WCS server. In this PoC, we utilized rasdaman for this purpose. Details on [importing data with rasdaman are available](./rasdaman_import.md)
+
+## Provision Issues
+In the section below, we describe some issues we faces when importing elevation data to WCS, together with the solutions we found to enable provision.
+
+### Wrong CRS
+While ideally the gridded data is generated to correct CRS from its source, gridded data can be transformed. Using GDAL, following requests provide a compressed and transformed grid:
+
+```
+gdalwarp -tap -tr 30 30 -t_srs EPSG:4258 -of vrt input_file.tif output_file.vrt
+gdal_translate -co compress=LZW output_file.vrt output_file.tif
+```
+
+Alternately, one can only utilize gdalwarp as follows, but that may lead to excessively large files:
+
+```
+gdalwarp -t_srs EPSG:4258 vrt input_file.tif output_file.tif
+```
+
+
+### Too little Memory 
+Importing the data for a large coverage in one single operation requires a great deal of memory available on the server. While one can compensate for not available RAM by increasing the swap space on the server, an alternative option is to split the file providing the elevation data into individual tiles. In the following sections, we provide GDAL commands for both projected and not projected CRS.
+
+```
+gdal_retile.py -ps 512 512 -targetDir .. AHN3_ZuidLimburg_subset_3035.tif
+```
+
