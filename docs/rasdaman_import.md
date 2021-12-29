@@ -5,6 +5,7 @@
 - [Installing rasdaman](./rasdaman_import.md#installing-rasdaman)
 - [Server Requirements](./rasdaman_import.md#server-requirements)
 - [Importing Elevation Data](./rasdaman_import.md#importing-elevation-data)
+- [Full Import Recipe](./rasdaman_import.md#full-import-recipe)
 
 ## Installing rasdaman
 Before we can import the coverages to the WCS, we must first install the WCS server. For rasdaman, all information required for installation are available at the following site:
