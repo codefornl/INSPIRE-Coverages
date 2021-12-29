@@ -4,7 +4,7 @@
 - [Data Sources](./ProvidingCoverages.md#data-sources)
 - [Additional INSPIRE Attributes](./ProvidingCoverages.md#additional-inspire-attributes)
 - [Importing Data](./ProvidingCoverages.md#importing-data)
-
+- [Importing Data with rasdaman](./rasdaman_import.md)
 
 
 
@@ -79,3 +79,4 @@ Putting it all together, in order to import one coverage, you need:
   - Service Metadata (ISO 19119)
   - Dataset Metadata (ISO 19115)
 
+In addition, you need a WCS server. In this PoC, we utilized rasdaman for this purpose. Details on [importing data with rasdaman are available](./rasdaman_import.md)
