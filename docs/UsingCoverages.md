@@ -30,7 +30,11 @@ http://{WCS Endpoint}/ows?
     REQUEST=GetCapabilities
 ```
 
-[**Response**](GetCapabilitiesResponse.xml)
+**Response**
+
+The [**GetCapabilities Response**](GetCapabilitiesResponse.xml) us usually returned in XML encoding. For easier readability, rasdaman endpoint provides a simple GUI that displays all relevant information from the XML response in a human readable manner.
+
+![CapabilitiesGUI](./pix/CapabilitiesGUI.png)
 
 ### DescribeCoverage
 
