@@ -28,14 +28,6 @@ Once the elevation data is available via WCS, data for the spatial area of inter
 
 [Using Coverages](docs/UsingCoverages.md)
 
-## Process
-
-Information on the [data provision process](docs/ProvisionProcess.md)
-
-## Data Sources
-
-All [data sources](docs/DataSources.md)
-
 ## Servers
 
 DataCove: http://sandbox.datacove.eu:8080/rasdaman/ows#/services
