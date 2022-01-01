@@ -94,7 +94,7 @@ gdal_translate -co compress=LZW output_file.vrt output_file.tif
 Alternately, one can only utilize gdalwarp as follows, but that may lead to excessively large files:
 
 ```
-gdalwarp -t_srs EPSG:4258 vrt input_file.tif output_file.tif
+gdalwarp -t_srs EPSG:4258 input_file.tif output_file.tif
 ```
 
 
