@@ -1,6 +1,10 @@
 # Using Coverages
 
 - [OGC Web Services](./UsingCoverages.md#ogc-web-services)
+- [WCS Requests](./UsingCoverages.md#wcs-requests)
+  - [GetCapabilities](./UsingCoverages.md#getcapabilities)
+  - [DescribeCoverage](./UsingCoverages.md#describecoverage)
+  - [GetCoverage](./UsingCoverages.md#getcoverage)
 
 
 
