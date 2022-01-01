@@ -15,3 +15,28 @@ OGC Web Services (OWS) compose a suite of related web services, tailored for the
 - [Sensor Observation Service (SOS)](https://www.ogc.org/standards/sos):  allows querying observations, sensor metadata, as well as representations of observed features. Further, this standard defines means to register new sensors and to remove existing ones. Also, it defines operations to insert new sensor observations. 
 - [Catalogue Service Web (CSW)](https://www.ogc.org/standards/cat): support the ability to publish and search collections of descriptive information (metadata) for data, services, and related information objects. 
 
+## WCS Requests
+In the following sections, we desribe the main WCS requests.
+
+### GetCapabilities
+The GetCapabilities request returns basic information about the service endpoint being interrogated. This request is common to all OWS.
+
+**Request Structure:**
+
+```
+http://{WCS Endpoint}/ows?
+    SERVICE=WCS& 
+    VERSION=2.0.1&
+    REQUEST=GetCapabilities
+```
+
+[**Response**](GetCapabilitiesResponse.xml)
+
+### DescribeCoverage
+
+### GetCoverage
+
+
+
+
+
