@@ -102,6 +102,6 @@ gdalwarp -t_srs EPSG:4258 input_file.tif output_file.tif
 Importing the data for a large coverage in one single operation requires a great deal of memory available on the server. While one can compensate for not available RAM by increasing the swap space on the server, an alternative option is to split the file providing the elevation data into individual tiles. In the following sections, we provide GDAL commands for both projected and not projected CRS.
 
 ```
-gdal_retile.py -ps 512 512 -targetDir .. AHN3_ZuidLimburg_subset_3035.tif
+gdal_retile.py -ps 512 512 -targetDir .. AHN3_ZuidLimburg_subset.tif
 ```
 
