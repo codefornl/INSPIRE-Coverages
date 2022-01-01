@@ -94,4 +94,7 @@ Example Request:
 
 https://coverage-demo.wetransform.eu/rasdaman/ows?&SERVICE=WCS&VERSION=2.0.1&REQUEST=GetCoverage&COVERAGEID=INSPIRE_WNZ_5_NAP&SUBSET=Y(3117600,3124600)&SUBSET=X(4024000,4031000)&FORMAT=image/tiff
 
+## Integrating in GIS
+At present, most GIS tools do not support WCS, and those that do only support version 1.0, whereas INSPIRE mandates the use of at least version 2.0. However, this is not that great of an issue, as all GIS tools can access at least on of the many response formats offered by WCS, e.g., TIFF. The required data can be accessed as described above, either through the creation of a WCS request URL specifying what portion of the coverage to provide in what format, or interactively via the GUI. The resulting coverage must then be stored locally, and accessed via the GIS tool of choice.
+
 
