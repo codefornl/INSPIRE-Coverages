@@ -2,6 +2,8 @@
 
 Repository: https://github.com/codefornl/INSPIRE-coverages
 
+[Presentation from the Workshop](./2021_RWS_PoC_INSPIRE_GP_coverages_V2_KS.pptx)
+
 # Thursday 18 November 2021 13:15 - 15:30
 Online
 
