@@ -70,11 +70,28 @@ The [**DescribeCoverage Response**](GetCapabilitiesResponse.xml) provides indept
 - RangeType: information on the values being provided
 - Coverage Metadata Element content (XML Snippet)
 
-![DescribeCovGUI.png](./pix/DescribeCovGUI.png)
+![DescribeCovGUI.png](./pix/DescribeCovGUIFull.png)
 
 ### GetCoverage
+The GetCoverage request is used to access the Coverage Range (the actual VALUES for the individual grid points). These values can be provided in various formats, whereby the full list of formats is provided in the [**GetCapabilities Response**](GetCapabilitiesResponse.xml). 
 
+Request Structure:
 
+```
+https://{WCS Endpoint}/ows?
+    SERVICE=WCS&
+    VERSION=2.0.1&
+    REQUEST=GetCoverage&
+    COVERAGEID={CoverageID}&
+    FORMAT={responseFormat}	&
+    SUBSET=Y({MinY},{MaxY})&
+    SUBSET=X({MinX},{MaxX})
+```
 
+_Note that the subset parameters are optional._
+
+Example Request:
+
+https://coverage-demo.wetransform.eu/rasdaman/ows?&SERVICE=WCS&VERSION=2.0.1&REQUEST=GetCoverage&COVERAGEID=INSPIRE_WNZ_5_NAP&SUBSET=Y(3117600,3124600)&SUBSET=X(4024000,4031000)&FORMAT=image/tiff
 
 
