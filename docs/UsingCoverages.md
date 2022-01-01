@@ -34,6 +34,10 @@ http://{WCS Endpoint}/ows?
     REQUEST=GetCapabilities
 ```
 
+Example Request:
+
+https://coverage-demo.wetransform.eu/rasdaman/ows?&SERVICE=WCS&VERSION=2.0.1&REQUEST=GetCapabilities
+
 **Response**
 
 The [**GetCapabilities Response**](GetCapabilitiesResponse.xml) us usually returned in XML encoding. For easier readability, rasdaman endpoint provides a simple GUI that displays all relevant information from the XML response in a human readable manner.
@@ -41,13 +45,32 @@ The [**GetCapabilities Response**](GetCapabilitiesResponse.xml) us usually retur
 ![CapabilitiesGUI](./pix/CapabilitiesGUI.png)
 
 ### DescribeCoverage
+The DescribeCoverage request returns indepth information on a specific coverage provided by the service endpoint
 
-The [**DescribeCoverage Response**](GetCapabilitiesResponse.xml) Indepth information on a specific coverage, includes:
+**Request Structure:**
+
+```
+Request Structure:
+    https://{WCS Endpoint}/ows?
+    SERVICE=WCS&
+    VERSION=2.0.1&
+    REQUEST=DescribeCoverage&
+    COVERAGEID={CoverageID}
+```
+
+Example Request:
+
+https://coverage-demo.wetransform.eu/rasdaman/ows?&SERVICE=WCS&VERSION=2.0.1&REQUEST=DescribeCoverage&COVERAGEID=INSPIRE_WNZ_5_NAP
+
+
+**Response**
+
+The [**DescribeCoverage Response**](GetCapabilitiesResponse.xml) provides indepth information on a specific coverage, includes:
 - Domain: area and resolution for which data is provided, the grid
 - RangeType: information on the values being provided
 - Coverage Metadata Element content (XML Snippet)
 
-![DescribeCovGUI.png](./pix/DescribeCovGUI.png.png)
+![DescribeCovGUI.png](./pix/DescribeCovGUI.png)
 
 ### GetCoverage
 
