@@ -5,7 +5,7 @@
   - [GetCapabilities](./UsingCoverages.md#getcapabilities)
   - [DescribeCoverage](./UsingCoverages.md#describecoverage)
   - [GetCoverage](./UsingCoverages.md#getcoverage)
-
+- [Integrating in GIS](./UsingCoverages.md#integrating-in-gis)
 
 
 
