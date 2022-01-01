@@ -38,6 +38,13 @@ The [**GetCapabilities Response**](GetCapabilitiesResponse.xml) us usually retur
 
 ### DescribeCoverage
 
+The [**DescribeCoverage Response**](GetCapabilitiesResponse.xml) Indepth information on a specific coverage, includes:
+- Domain: area and resolution for which data is provided, the grid
+- RangeType: information on the values being provided
+- Coverage Metadata Element content (XML Snippet)
+
+![DescribeCovGUI.png](./pix/DescribeCovGUI.png.png)
+
 ### GetCoverage
 
 
