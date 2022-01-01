@@ -2,12 +2,7 @@
 
 Repository: https://github.com/codefornl/INSPIRE-coverages
 
-Thats the Main page voor INSPIRE-coverages with info and pictures.
-It wille be used this will be used to decide on the final date for the workshop
-
-We would like to invite you to take note of our experiences.
-
-# Thursday 18 November 13:15 - 15:30
+# Thursday 18 November 2021 13:15 - 15:30
 Online
 
 # Purpose
