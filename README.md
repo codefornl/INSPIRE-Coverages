@@ -36,7 +36,10 @@ Elevation and bathymetry data from RWS, focused around the area of Limburg, has 
 
 ## Issues
 
-Information on all [issues](docs/Issues.md)
+All issues identified during the course of this work that could not be resolved within the PoC timeframe have been collected in the Issues section of this repository.
+
+[PoC WCS Servers](https://github.com/codefornl/INSPIRE-Coverages/issues)
+
 
 ## Workshop 
 Direct connected with the dutch Geoforum (https://geoforum.nl/t/inspire-coverages)
