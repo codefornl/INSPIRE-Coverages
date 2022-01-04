@@ -8,7 +8,8 @@
 - [Download Services for Coverages](./INSPIRE.md#download-services-for-coverages)
 - [Required Extension to WCS](./INSPIRE.md#required-extension-to-wcs)
 - [INSPIRE Data Models and Schemas](./INSPIRE.md#inspire-data-models-and-schemas)
-- [INSPIRE WCS Demonstrator]()
+- [INSPIRE WCS Demonstrator](./INSPIRE.md#inspire-wcs-demonstrator)
+
 
 ## INSPIRE Themes with Coverage Models
 The following INSPIRE Themes make use of Coverage Models:
