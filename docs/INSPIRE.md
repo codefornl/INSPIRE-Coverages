@@ -8,8 +8,7 @@
 - [Download Services for Coverages](./INSPIRE.md#download-services-for-coverages)
 - [Required Extension to WCS](./INSPIRE.md#required-extension-to-wcs)
 - [INSPIRE Data Models and Schemas](./INSPIRE.md#inspire-data-models-and-schemas)
-
-
+- [INSPIRE WCS Demonstrator]()
 
 ## INSPIRE Themes with Coverage Models
 The following INSPIRE Themes make use of Coverage Models:
@@ -123,3 +122,7 @@ In order to provide the additional attributes specified for the ElevationGridCov
 ![ElevationGridCoverageMetadata](./pix/Elevation%20Good%20Practice.png)
 
 The schema for this featureType is available from https://schema.datacove.eu/ElevationGridCoverageMetadata.xsd
+
+## INSPIRE WCS Demonstrator
+
+On a more general level, we've set up a WCS together with additional information on Coverages and WCS in INSPIRE. This is available at https://inspire-wcs.eu/
